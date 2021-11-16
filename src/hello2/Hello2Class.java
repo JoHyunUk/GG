@@ -11,14 +11,13 @@ public class Hello2Class {
 		// 나는 누구 입니다
 		// 잘 부탁드립니다
 		String b = "므요"; // 문자열 변수 선언
+		String c = "뿔뱀이";
 		a = 100;
 		System.out.println("안녕하세요 ");
 		System.out.println("나는 " + b + " 입니다 ");
 		System.out.println( b + " 잘 부탁드립니다 ");
-		System.out.println( b + " 인사 드립니다 ");
-		System.out.println( b + " 집에 갑니다 ");
-		System.out.println( b + "가 집에 가다가 뿔뱀을 만났네 ");
-		System.out.print( b + " 체력은 ");
+		System.out.println( b + "가 길을 가다가 " + c+ "를 만났네 ");
+		System.out.print( b + "와 " + c + "의 호감도는 ");
 		System.out.println(a);
 		
 	}
