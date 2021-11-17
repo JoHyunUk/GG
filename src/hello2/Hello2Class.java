@@ -6,14 +6,18 @@ public class Hello2Class {
 		int st;   // 변수명은 숫자로 시작할 수 없다.
 		int a;    // 변수명에 특수문자를 사용할 수 없다.
 		int classa; // 키워드를 변수명으로 사용할 수 없다.
+		int d;
 		
 		String b = "모험가"; // 문자열 변수 선언
 		String c = "몬스터";
 		a = 100;
+		d = 10;
 		System.out.println( "나는 " + b + " 입니다 ");
 		System.out.println( b + "가 길을 가다가 " + c + "를 만났네 ");
 		System.out.print( b + "의 체력은 ");
 		System.out.println(a);
+		System.out.print( b + "의 경험치는 ");
+		System.out.println(d);
 		System.out.println();
 		
 		// 몬스터의 마릿수
@@ -44,12 +48,17 @@ public class Hello2Class {
 			        // 몬스터가 죽는다를 출력
 			    	System.out.println("몬스터가 죽는다");
 			    	mon = mon -1; // 몬스터의 수를 줄임
+			    	System.out.println("경험치를 10 얻었다");
+			    	d = d +10; 
+			    	System.out.print( b + "의 경험치는 ");
+					System.out.println(d);
+			    	
 			        // 체력만큼 공격 받지 않으면
 			    } else {
 			        // 몬스터가 죽지 않는다를 출력
 			    	System.out.println("몬스터가 죽지 않는다");
 			    	System.out.println("몬스터에게 반격 당했다");
-			    	a = a -1;  
+			    	a = a -1;  //
 			    	System.out.print( b + "의 체력은 ");
 			    	System.out.println(a);
 			    }  // else
