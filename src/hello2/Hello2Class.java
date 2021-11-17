@@ -48,6 +48,10 @@ public class Hello2Class {
 			    } else {
 			        // 몬스터가 죽지 않는다를 출력
 			    	System.out.println("몬스터가 죽지 않는다");
+			    	System.out.println("몬스터에게 반격 당했다");
+			    	a = a -1;  
+			    	System.out.print( b + "의 체력은 ");
+			    	System.out.println(a);
 			    }  // else
 			}  // for
 		    monNo++;  // 다음 몬스터
