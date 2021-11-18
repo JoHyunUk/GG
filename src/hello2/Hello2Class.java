@@ -1,5 +1,8 @@
 package hello2;
 
+import java.util.Random;
+import java.util.Scanner;
+
 public class Hello2Class {
 	public static void main(String[] args) {
 		
@@ -11,7 +14,7 @@ public class Hello2Class {
 		String b = "모험가"; // 문자열 변수 선언
 		String c = "몬스터";
 		a = 100;
-		d = 10;
+		d = 0;
 		System.out.println( "나는 " + b + " 입니다 ");
 		System.out.println( b + "가 길을 가다가 " + c + "를 만났네 ");
 		System.out.print( b + "의 체력은 ");
@@ -29,7 +32,12 @@ public class Hello2Class {
 		// 3번 몬스터는 1번
 		// 4번 몬스터는 5번
 		// 5번 몬스터는 10번
-		int[] odds = {2, 3, 1, 5, 10};
+		Random rd = new Random();
+//		int[] odds = {2, 3, 1, 5, 10};
+		int[] odds = new int[5];
+		for (int i1=0; i1<odds.length; i1++) {
+			odds[i1] = rd.nextInt(10)+1;
+		}  // for
 		
 		//몬스터 번호
 		int monNo = 0;
